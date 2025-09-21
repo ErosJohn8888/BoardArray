@@ -16,7 +16,6 @@ class BoardArray : public Board {
         void add(Entry* entry) {
             // TODO: IMPLEMENT THIS FUNCTION
             // ALGORITHM IS PROVIDED IN INSTRUCTIONS.TXT
-            //
             if (index == SIZE && !entry->compare(&array[SIZE - 1])) {
         cout << entry->name << "'s score is too low to be added!" << endl;
         return;
