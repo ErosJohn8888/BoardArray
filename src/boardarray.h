@@ -20,7 +20,6 @@ class BoardArray : public Board {
         cout << entry->name << "'s score is too low to be added!" << endl;
         return;
         }
-
         int i = (index < SIZE ? index : SIZE - 1) - 1;
         while (i >= 0 && entry->compare(&array[i])) {
         array[i + 1] = array[i];
